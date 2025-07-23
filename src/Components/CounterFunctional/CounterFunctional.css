@@ -1,0 +1,19 @@
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.decrement{
+    background-color: red;
+}
+
+.increment{
+    background-color: greenyellow;
+}
+
+.value{
+    font-size: 100px;
+}

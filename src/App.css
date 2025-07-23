@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+  margin: auto;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  border: 5px dashed black;
+  border-radius: 15px;
+}
