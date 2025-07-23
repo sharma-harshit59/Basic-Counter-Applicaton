@@ -1,4 +1,5 @@
 Visit the site: https://sharma-harshit59-reactcounter.netlify.app/
+NOTE: The Counters start with a random value set inside the project.
 
 # Getting Started with Create React App
 
