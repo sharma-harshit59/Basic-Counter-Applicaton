@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* prevent scrollbars */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General Styles */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* responsive */
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Counter Box */
+.counter-box {
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2), 
+              inset -5px -5px 15px rgba(255,255,255,0.8);
+  text-align: center;
+  min-width: 280px;
+  flex: 1 1 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter-box h2 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Number Display */
+.number-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #1e3a8a;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Buttons Style */
+button {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #e0e7ff, #c7d2fe);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.25),
+              -4px -4px 8px rgba(255,255,255,0.7);
+  transition: all 0.2s ease-in-out;
+  color: #1e3a8a;
+}
+
+button:hover {
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+              -2px -2px 5px rgba(255,255,255,0.8);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3),
+              inset -2px -2px 5px rgba(255,255,255,0.8);
+}
+
+/* Reset Button */
+.reset-btn {
+  margin-top: 20px;
+  background: linear-gradient(145deg, #fecaca, #fca5a5);
+  color: #991b1b;
+}
+
+.reset-btn:hover {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3),
+              -2px -2px 6px rgba(255,255,255,0.7);
 }
